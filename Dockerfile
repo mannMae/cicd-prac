@@ -5,7 +5,7 @@ WORKDIR /app
 COPY ./ ./
 
 RUN apt-get update
-RUN pip install -r requirements.txt
+RUN pip install -r --no-cache-dir requirements.txt
 
 EXPOSE 80
 
